@@ -1,0 +1,8 @@
+Package: AIafter
+Title: Forecast Combination Using the AI-AFTER Algorithm
+Version: 1.1
+Author: Wei Qian, Craig A. Rolling, Gang Cheng, Yuhong Yang
+Maintainer: Wei Qian <weiqian@udel.edu>
+Description: This package implements the AI-AFTER algorithm for forecast combination that first determines the appropriate combining goal (adaptation vs. improvement) and then combines the forecasts to achieve optimal performance of the proper goal.
+License: GPL-2
+Depends: forecast,ncvreg,MASS,quadprog

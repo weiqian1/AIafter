@@ -1,0 +1,12 @@
+
+import(forecast,ncvreg, MASS, quadprog)
+
+importFrom("stats", "AIC", "BIC", "as.formula", "lm", "lm.fit",
+             "median", "predict", "var")
+importFrom("utils", "head", "tail")
+
+export(AIafter,
+AFTER1,
+BG1,
+CLR1,
+LinReg1)
