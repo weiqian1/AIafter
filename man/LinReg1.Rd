@@ -21,7 +21,7 @@ LinReg1(X, y, Xnew, ynew = NULL, n0 = 5)
 \author{Wei Qian, Craig A. Rolling, Gang Cheng and Yuhong Yang\cr
 Maintainer: Wei Qian  <weiqian@udel.edu>}
 \references{
-Qian, W., Rolling, C. A., Cheng, G., and Yang, Y. (2020), ``Combining Forecasts for Universally Optimal Performance'', submitted. \cr
+Qian, W., Rolling, C. A., Cheng, G., and Yang, Y. (2021), ``Combining Forecasts for Universally Optimal Performance'', International Journal of Forecasting, to appear. \cr
 }
 
 \seealso{\code{\link{AIafter}}.}
@@ -34,7 +34,7 @@ neval <- 20
 n <- nrow(rgdp)
 y <- rgdp[1:(n-neval),1]
 X <- rgdp[1:(n-neval),-1]
-# candidate forecasts for unobserved observations
+# candidate forecasts for unobserved series
 Xnew <- rgdp[(n-neval+1):n,-1]
 
 # generate forecasts by LR (both fitted and predicted values)

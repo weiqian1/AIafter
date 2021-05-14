@@ -4,7 +4,7 @@ CLR1 = function(X,y,Xnew,ynew=NULL,n0=5)
 {
    L2CR = function(X,y)
    {
-      ynew = y - X[,1]; Xnew = X[,-1]- X[,1];
+      ynew = y - X[,1]; Xnew = as.matrix(X[,-1]- X[,1]);
       n = nrow(Xnew); p = ncol(Xnew); 
       Rinv = t(Xnew) %*% Xnew + 0.001*diag(1,p);
       C = cbind(rep(-1,p), diag(p));

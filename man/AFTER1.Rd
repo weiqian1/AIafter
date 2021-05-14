@@ -2,7 +2,7 @@
 \alias{AFTER1}
 \title{Forecast combination by AFTER.}
 \description{
-This function generates forecast combination results using AFTER algorithm (Yang, 2004).
+This function generates forecast combination results using the AFTER algorithm (Yang, 2004).
 }
 \usage{
 AFTER1(X, y, Xnew, ynew = NULL, n0 = 5)
@@ -25,7 +25,7 @@ Maintainer: Wei Qian  <weiqian@udel.edu>}
 \references{
 Yang, Y. (2004), ``Combining Forecasting Procedures: Some Theoretical Results,'' \emph{Econometric Theory}, 20, 175-222.\cr
 
-Qian, W., Rolling, C. A., Cheng, G., and Yang, Y. (2020), ``Combining Forecasts for Universally Optimal Performance'', submitted. \cr
+Qian, W., Rolling, C. A., Cheng, G., and Yang, Y. (2021), ``Combining Forecasts for Universally Optimal Performance'', International Journal of Forecasting, to appear. \cr
 }
 
 \seealso{\code{\link{AIafter}}.}
@@ -39,7 +39,7 @@ neval <- 20
 n <- nrow(rgdp)
 y <- rgdp[1:(n-neval),1]
 X <- rgdp[1:(n-neval),-1]
-# candidate forecasts for unobserved observations
+# candidate forecasts for unobserved series
 Xnew <- rgdp[(n-neval+1):n,-1]
 
 # generate forecasts by AFTER (both fitted and predicted values)
