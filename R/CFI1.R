@@ -88,7 +88,6 @@ fwd_lr = function(X,y,size)
 	
 	if(size == 0){
 		output = input;
-		break;
 	}else{
 		output = NULL;	
 	}
@@ -165,7 +164,6 @@ fwd_clr = function(X,y,size)
 	
 	if(size == 1){
 		output = input;
-		break;
 	}else{
 		output = NULL;	
 	}
